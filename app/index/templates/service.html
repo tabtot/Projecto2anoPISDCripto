@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+{% load static %}
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Safe Search</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Creative Agency Bootstrap Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Airspace Template v1.0">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets_corp/images/Safe.jpeg' %}" />
+
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'assets_corp/plugins/bootstrap/bootstrap.min.css' %}">
+  <!-- Ionic Icon Css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'assets_corp/plugins/Ionicons/css/ionicons.min.css' %}">
+  <!-- animate.css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'assets_corp/plugins/animate-css/animate.css' %}">
+  <!-- Magnify Popup -->
+  <link rel="stylesheet" type="text/css" href="{% static 'assets_corp/plugins/magnific-popup/magnific-popup.css' %}">
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="{% static 'assets_corp/plugins/slick/slick.css' %}">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="{% static 'assets_corp/css/style.css' %}">
+
+</head>
+
+<body id="body">
+
+<!-- Header Start -->
+<header class="navigation">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-lg p-0">
+					<a class="navbar-brand" href="{% url 'index' %}">
+						<img src="{% static 'assets_corp/images/logo.png' %}" style="width: 70%" alt="Logo">
+					</a>
+
+					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="ion-android-menu"></span>
+					</button>
+
+					<div class="collapse navbar-collapse ml-auto" id="navbarsExample09">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="{% url 'index'%}">Home</a>
+							</li>
+							<li class="nav-item @@service"><a class="nav-link" href="{% url 'service'%}">Service</a></li>
+              				<li class="nav-item @@about"><a class="nav-link" href="{% url 'about'%}">About Us</a></li>
+							<li class="nav-item ml-3 mr-0 @@page-login"><a class="nav-link" href="{% url 'logar_usuario'%}">Log In</a></li>
+							<li class="nav-item @@Signin"><a class="nav-link" href="{% url 'cadastrar_usuario'%}">Sign Up</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header><!-- header close -->
+
+<section class="page-title bg-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Services</h1>
+          <p>Learn From Other's Mistakes!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="service-about section">
+	<div class="container">
+		<div class="row align-items-center text-center text-lg-left">
+			<div class="col-lg-6">
+				<h2>How our service works</h2>
+				<p class="mt-30" style="text-align: justify">The project focuses on an online information search platform using OSINT techniques, 
+					in order to automate and centralise the search for relevant information for companies, increasing 
+					their efficiency and reducing the time spent obtaining useful data. <br>
+					The Platform is capable of obtaining data from various sources, such as social networks, search engines,
+					target company websites, database leaks, lists of known vulnerabilities and employee information.</p>
+			</div>
+			<div class="col-lg-6">
+				<img class="img-fluid" src="{% static 'assets_corp/images/company/company-group-pic.png' %}">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="service-arrow">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-4 col-sm-6 bg-primary">
+				<div class="block">
+					<i class="ion-map text-white"></i>
+					<h3 class="text-white mb-3">User Friendly</h3>
+					<p>The system is designed to be compatible with various devices and browsers, addressing heterogeneity issues. Additionally, 
+						the client-server architecture with geo-replicated capabilities ensures that the service can grow according to demand, 
+						maintaining performance and availability even with an increase in the number of users.
+						These advantages make the service an essential tool for companies looking to improve their cybersecurity posture, providing
+						efficient, secure, and user-friendly management of critical information for the prevention and response to security incidents.</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 bg-primary bg-primary-dark">
+				<div class="block">
+					<i class="ion-ios-information-outline text-white"></i>
+					<h3 class="text-white mb-3">Centralised Information</h3>
+					<p>The service automates the collection of relevant information from multiple sources through OSINT, centralizing all 
+						data on a single platform. This significantly reduces the time required to find useful information, allowing companies 
+						to focus their resources on mitigation and problem resolution actions instead of wasting time on manual data searches.
+						Reduction of Human Errors: Automation minimizes the possibility of human errors in data collection, ensuring that all 
+						relevant information is consistently and accurately captured and analyzed.</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-12 bg-primary bg-primary-darker">
+				<div class="block">
+					<i class="ion-gear-b text-white"></i>
+					<h3 class="text-white mb-3">Advanced Security and Incident Management</h3>
+					<p>The system includes advanced functionalities for detecting data leaks, allowing companies to be immediately alerted to 
+						any security breaches. This enables a quick response to mitigate damage and implement preventive measures.
+						Secure Information Storage: Using robust encryption techniques (SHA-256 for passwords and AES-256-CBC for sensitive data),
+						the service ensures that all stored information is protected against unauthorized access, guaranteeing data integrity and confidentiality.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="service-list section bg-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-title text-center">
+					<h2>What do we need from you</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-sm-6">
+				<div class="block">
+					<h3 class="mb-3">IntelligenceX API Key</h3>
+					<p>Sign in into <a style="cursor:pointer;  text-decoration: underline;" href="https://intelx.io/account?tab=developer" target="_blank">IntelX.io</a> and get your API Key in Acount -> Developer</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="block">
+					<h3 class="mb-3">Hunter.io API Key</h3>
+					<p>Sign in into <a style="cursor:pointer;  text-decoration: underline;" href="https://hunter.io/api-keys" target="_blank">Hunter.io</a> and get your API Key in Acount -> API</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="block">
+					<h3 class="mb-3">Shodan API Key</h3>
+					<p>Sign in into <a style="cursor:pointer;  text-decoration: underline;" href="https://account.shodan.io/" target="_blank">Shodan.io</a> and get your API Key in Acount -> API Key</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="block">
+					<h3 class="mb-3">IP Adresses</h3>
+					<p>You will be asked to write down an IP Adress in case you want to find something about the IP</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="block">
+					<h3 class="mb-3">URLs</h3>
+					<p>You will be asked to write down an URL in case you want to find something about a specific site</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="block">
+					<h3 class="mb-3">Domains</h3>
+					<p>You will be asked to write down a Domain in case you want to find something aobut the Domain </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="call-to-action bg-1 section-sm overly">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="block">
+					<h2 class="mb-3">Start searching, for everyone's safety!</h2>
+					<p>Pentest your company! <br></p>
+					<a class="btn btn-main btn-solid-border" href="{% url 'cadastrar_usuario'%}">Search Here!</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- footer Start -->
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer-manu">
+					<ul>
+						<li><a href="{% url 'about'%}">About Us</a></li>
+						<li><a href="{% url 'service'%}">Service</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!--Scroll to top-->
+<div id="scroll-to-top" class="scroll-to-top">
+	<span class="icon ion-ios-arrow-up"></span>
+</div>
+
+    <!-- 
+    Essential Scripts
+    =====================================-->
+
+
+    <!-- Main jQuery -->
+    <!-- Main jQuery -->
+    <script src="{% static 'assets_corp/plugins/jquery/jquery.min.js' %}"></script>
+    <!-- Bootstrap 3.1 -->
+    <script src="{% static 'assets_corp/plugins/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- slick Carousel -->
+    <script src="{% static 'assets_corp/plugins/slick/slick.min.js' %}"></script>
+    <script src="{% static 'assets_corp/plugins/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+    <!-- filter -->
+    <script src="{% static 'assets_corp/plugins/shuffle/shuffle.min.js' %}"></script>
+    <script src="{% static 'assets_corp/plugins/SyoTimer/jquery.syotimer.min.js' %}"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+    <script src="{% static 'assets_corp/plugins/google-map/map.js' %}"></script>
+
+    <script src="{% static 'assets_corp/js/script.js' %}"></script>
+
+    </body>
+
+    </html>
